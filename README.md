@@ -9,3 +9,8 @@ for testing:
 
 1. generate a request like you normally would through your contract implementing VRF
 2. fulfill the request for that nonce by calling the fulfillRequest(nonce) function through the ISupraRouterMock.sol that we deployed in setup step 1
+
+
+note:
+
+there isn't a gas limit set rn on the .call when hitting the callback function - will have to add that
